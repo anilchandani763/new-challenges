@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* for mobile body */
+#mobile{
+    border-radius: 40px;
+    height: 500px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(./Images/img.jpg) center ;
+}
+/* for mobile screen */
+#screen{
+    display: flex;
+    flex-direction: column;
+    border: 4px solid rgba(0, 0, 0, 0.3);
+    border-radius: 40px;
+    height: 495px;
+    width: 265px;
+    background: transparent ;
+    backdrop-filter: blur(5px) ;
+    justify-content: space-between;
+    align-items: center;
+}
+/* for mobile camera cover */
+#camera{
+    background-color: rgb(46, 43, 43);
+    display: flex;
+    height: 18px;
+    width: 65px;
+    border-radius: 50px;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+/* for mobile camera */
+.facecam{
+    height: 12px;
+    width: 12px;
+    border-radius: 50px;
+    background-color: rgb(14, 11, 11);
+}
+#time{display: flex;
+    /* border: 2px solid red; */
+    margin-top: 70px;
+    height: 70px;
+    width: 220px;
+    margin-top:-190px ;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+/* for icons frame */
+#iconframe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 240px;
+    margin-bottom: 8px;
+    border-radius: 40px;
+}
+/* for icons */
+#bottomicon{
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid green; */
+    height: 50px;
+    opacity: 30%;
+    width: 240px;
+    margin-top: -1px;
+    margin-bottom: -30px;
+    z-index: -1;
+}
+.icon {
+    opacity: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-color: #524545 ;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+}   
+#topicon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background: yellow; */
+    height: 50px;
+    width: 240px;
+    margin-top: -50px;
+    z-index: 1;
+}
+#topicon> img{
+    margin: 13px;
+    z-index: 2;
+    filter: invert(100%);
+}
+

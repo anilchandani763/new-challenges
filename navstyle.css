@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&family=Playwrite+VN:wght@100..400&family=Sixtyfour&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    /* border: 2px solid red; */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border-radius: 50px;
+    background: rgba(228, 220, 224, 0.5);
+    z-index: -1;
+}
+
+.box {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /* border: 2px solid green; */
+}
+.box> button{
+    border: none ;
+    cursor: pointer;
+    padding: 0;
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+/* all boxes */
+#box1,
+#box2,
+#box3 {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#box1,
+#box3 {
+    width: 30%;
+}
+
+/* box1 */
+
+#box1p1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid black; */
+}
+
+#box1p1>img {
+    cursor: pointer;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    transition: all 0.5s ease-in-out;
+}
+#box1p2> #searchb{
+    border: hidden;
+    height: 70%;
+    font-family:"Fuzzy Bubbles", serif; 
+    background: gray;
+    padding-left: 5px;
+}
+#box1p2> #searchb::placeholder{
+    color: black;
+    
+}
+#box1p2 {
+    height: 60%;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: gray;
+    /* border: 2px solid black; */
+    border-radius: 50px;
+    font-family:"Fuzzy Bubbles", serif; ;
+    font-size: 15px;
+}
+
+#box1p2>img {
+    padding-left: 20px;
+    height: 15px;
+    width: 15px;
+}
+
+
+/* box 2 */
+#box2 {
+    width: 70%;
+    justify-content: space-evenly !important;
+}
+
+#box2>img {
+    padding: 2px;
+    border-radius: 50px;
+    height: 22px;
+    width: 22px;
+    cursor: pointer;
+    /* border: 2px solid rgb(63, 61, 61); */
+    transition: all .2s ease-in;
+}
+/* box3 */
+#box3 {
+    justify-content: space-evenly;
+}
+#box3> img{
+    /* border: 2px solid red; */
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 2px;
+    transition: all .4s ease-in;
+}
+img{
+opacity: 70%;
+}
+img:hover{
+opacity: 100%;
+}
+.b a:hover{
+    /* border: 2px solid rgb(138, 132, 132); */
+    padding: 20px;
+    border-radius: 30px;
+    background: #f1d6d6;
+}
+.b a{
+    display: inline-block;
+    padding: 20px;
+    border-radius: 30px;
+    background: #e6e2e2;
+    /* border: 2px solid red; */
+    margin-top: 25px;
+    color: aqua;
+}
+.b a:link{
+    color: black;
+}
+.b a:visited{
+    color: rgb(60, 158, 81);
+}
+.b input:focus{
+    background: #ebe4e4;
+}
+.b input:active{
+    background: #9b6767;
+}
+.b input:hover{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+.b input{
+    padding: 10px;
+}
+.new{
+    max-height: 200px;
+    margin: auto;
+    width: 250px;
+    background: rgba(187, 182, 182, .5);
+    padding: 10px 20px 10px 30px;
+    overflow-y: scroll;
+    border: 10px solid red;
+    border-top: 10px double red;
+    border-bottom: 10px solid green;
+    scrollbar-width: none;
+}
+
+#login{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Titillium Web", serif;
+}
+#login-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    height: 400px;
+    width: 300px;
+    padding: 15px 20px 15px 20px;
+    margin: 20px ;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 20px;
+    background: rgba(218, 216, 216, 0.5);
+    box-shadow: 2px 3px gray;
+}
+#login-box h3{
+    font-size: 15px;
+    color: #696969;
+    margin-bottom: -5px;
+    margin-top: 5px;
+}
+#login-box h1{
+    color: rgb(85, 85, 85);
+    font-size: 30px;
+    margin: 10px 0 0 0;
+}
+#login-box .input-box{
+    /* border: 2px solid  red; */
+    padding: 5px 20px 5px 0px;
+    margin-top: 10px;
+}
+#login-box .input-box input{
+    padding: 5px 0px 5px 10px;
+    font-family:"Titillium Web", serif ;
+    height: 25px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 1px 1px rgb(173, 173, 173);
+    border: 1px solid gray;
+    background: rgba(218, 216, 216, 0.5);
+    font-weight: bold;
+
+
+}
+#login-box .input-box input::placeholder{
+    color: rgb(44, 44, 44);
+    font-weight: bold;
+}
+/* #login-box .input-box input:active{
+    outline: none;
+} */
+#login-box .input-box input:focus-visible{
+    outline: none;
+    background: rgba(218, 216, 216, 0.5);
+}
+#login-box .input-box button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 6px;
+    width: 100%;
+    font-family:"Titillium Web", serif ;
+    box-shadow: 1px 1px rgb(173, 173, 173);
+    border: 1px solid gray;
+    background: rgba(218, 216, 216, 0.5);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#login-box .input-box button > img, label{
+    cursor: pointer;
+}
+#login-box .remember-forget{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+}
+#login-box .btn{
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family:"Titillium Web", serif ;
+    padding: 5px;
+    border: 1px solid rgb(184, 176, 176);
+    border-radius: 5px ;
+    background: rgba(218, 216, 216, 0.5);
+    box-shadow: 2px 3px rgb(148, 148, 148) ;
+}
+#login-box .register-link{
+    /* border: 1px solid red; */
+    margin-top: 12px;
+    text-align: center;
+}
+
+
+
+
+
