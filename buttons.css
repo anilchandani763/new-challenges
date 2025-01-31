@@ -3,7 +3,7 @@
     padding: 0;
 }
 body{
-    background: #d4accf;
+    background: #d4cbd3;
 }
 .main-box{
     /* border: 1px solid green; */
@@ -26,60 +26,72 @@ body{
     height: 70px;
     width: 40%;
     border-radius: 5px;
-    background: rgba(231, 231, 231, .5);
+    background: rgba(255, 245, 245, .8);
     box-shadow: 5px 5px 5px rgb(143, 143, 143);
     cursor: pointer;
-    border-left: 5px solid
-    /* border: 1px solid red; */
-    transition: background 1s ease;
-}
-.box:hover{
-    background: #383838;
-    color: #fff;
+    position: relative;
+    transition:  color  .4s ease-in-out;
+    font-weight: bold;
+    z-index: 1;
+    
 }
 .box p{
     margin-top: 8px;
     font-size: 12px;
 }
-.b1{
-    border-left: 10px solid #f95a9a;
+.box1{
+    color: #fd5598;
 }
-.b1:hover{
-    background: #f95a9a;
-    border-left-color: #fff;
+.b1{
+    background: #fd5598;
+}
+.box2{
+    color: #9b5ddb;
 }
 .b2{
-    border-left: 10px solid #9c5ee2;
+    background: #9b5ddb;
 }
-.b2:hover{
-    background: #9c5ee2;
-    border-left-color: #fff;
+.box3{
+    color: #0eca96;
 }
 .b3{
-    border-left: 10px solid #13c695;
+    background: #0eca96;
 }
-.b3:hover{
-    background: #13c695;
-    border-left-color: #fff;
+.box4{
+    color: #5eb8cc;
 }
 .b4{
-    border-left: 10px solid #5db9ce;
+    background: #5eb8cc;
 }
-.b4:hover{
-    background: #5db9ce;
-    border-left-color: #fff;
+.box5{
+    color: #e5aa51;
 }
 .b5{
-    border-left: 10px solid #e7ac53;
+    background: #e5aa51;
 }
-.b5:hover{
-    background: #e7ac53;
-    border-left-color: #fff;
+.box6{
+    color: #1dca95;
 }
 .b6{
-    border-left: 10px solid #26c193;
+    background: #1dca95;
 }
-.b6:hover{
-    background: #26c193;
-    border-left-color: #fff;
+.color{
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    border: none;
+    left: 0;
+    border-radius: 5px 0px 0px 5px;
+    transition:  width  .4s ease-in-out;
+    z-index: -1;
 }
+.box:hover .color{
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+}
+.box:hover{
+    color: #fff;
+}
+
+
